@@ -1,0 +1,30 @@
+name: gfqrfhtn lkz vfibyyjuj j,extybz
+on: 
+  push :
+    branches: [ master ]  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: gfqrfhtn lkz vfibyyjuj j,extybz
+        id: model
+        uses: kingtelepuz5/git-actions@fcnbjy_ml
+        with:
+          DATASET: "juice"
+          TARGET: "Purchase"
+          USECASE: "classification"
+      - name: Upload model.pkl
+        uses: actions/upload-artifact@v2
+        with: 
+          name: model
+          path: model.pkl
+      - name: Upload exp_github_logs.csv
+        uses: actions/upload-artifact@v2
+        with: 
+          name: experiment-logs
+          path: exp_github_logs.csv
+      - name: Upload logs.log
+        uses: actions/upload-artifact@v2
+        with: 
+          name: system-logs
+          path: logs.log
